@@ -5,6 +5,9 @@ import Navbar from '@/common/navbar/Navbar'
 import PrimarySection from './components/primarySection/PrimarySection'
 import SecondarySection from './components/secondarySection/SecondarySection'
 import TertiarySection from './components/tertiarySection/TertiarySection'
+import CtaSection from './components/ctaSection/CtaSection'
+import Footer from './components/footer/Footer'
+import Calendly from './components/calendly/Calendly'
 
 
 export default function Home() {
@@ -12,11 +15,13 @@ export default function Home() {
 
   return (
     <main className="">
-      <Navbar/>
       <HeroSection/>
       <PrimarySection/>
       <SecondarySection/>
       <TertiarySection/>
+      <CtaSection/>
+      <Footer/>
+      <Calendly/>
     </main>
   )
 }

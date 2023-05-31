@@ -1,5 +1,5 @@
 import { H1 } from "@/common/typography/Heading";
-import {P3 } from "@/common/typography/Paragraph";
+import { P3 } from "@/common/typography/Paragraph";
 import React from "react";
 
 const tertiary_contents = [
@@ -56,16 +56,22 @@ const tertiary_contents = [
 const TertiarySection = () => {
   return (
     <section className="md:p-10">
-        <div className="grid grid-rows-6 grid-cols-1 md:grid-rows-2 md:grid-cols-3 gap-5 md:gap-20 center-section p-5">
-      {tertiary_contents.map((content) => (
-        <div className=" md:max-w-[221px] mx-auto">
-          <div className="bg-black h-[30px] w-[30px] md:h-[60px] md:w-[60px] rounded-full flex justify-center items-center font-bold text-[12px] md:text-[20px] md:my-5">
-            <img src={content.image} className="w-6/12 h-auto" alt={content.title} />
+      <div className="grid grid-rows-6 grid-cols-1 md:grid-rows-2 md:grid-cols-3 gap-5 md:gap-20 center-section p-5">
+        {tertiary_contents.map((content) => (
+          <div className=" md:max-w-[221px] mx-auto">
+            <div className="bg-black h-[30px] w-[30px] md:h-[60px] md:w-[60px] rounded-full flex justify-center items-center md:my-5">
+              <img
+                src={content.image}
+                className="w-5/12 h-auto"
+                alt={content.title}
+              />
+            </div>
+            <H1 classes="text-[20px] leading-[20px] md:text-[24px] md:leading-[24px] uppercase my-3 max-w-[200px]">
+              {content.title}
+            </H1>
+            <P3 classes="my-3">{content.content}</P3>
           </div>
-          <H1 classes="text-[20px] leading-[20px] md:text-[24px] md:leading-[24px] uppercase my-3 max-w-[200px]">{content.title}</H1>
-          <P3 classes="my-3">{content.content}</P3>
-        </div>
-      ))}
+        ))}
       </div>
     </section>
   );
