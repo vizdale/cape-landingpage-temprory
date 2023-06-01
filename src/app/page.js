@@ -21,7 +21,7 @@ export default function Home() {
       <TertiarySection/>
       <CtaSection/>
       <Footer/>
-      <Calendly/>
+      {/* <Calendly/> */}
     </main>
   )
 }
