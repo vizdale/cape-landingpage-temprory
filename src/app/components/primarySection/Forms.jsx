@@ -20,21 +20,27 @@ const select_values = [
 ]
 
 const Forms = () => {
+  
   const [formData, setFormData] = useState({
     email: "",
     company_name: "",
     website_url: "",
-    service : "",
+    services : "",
   });
 
   console.log(formData)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    window.location.pathname = "/success"
+  }
   return (
     <>
       <H2 classes="mb-5">CAPE can help, all you have to do is ask.</H2>
       <P3 classes="mb-5">
         Start your branding journey today, with CAPE in your corner!
       </P3>
-      <form className="flex flex-col gap-5">
+      <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
         <Input
           type="email"
           placeholder="example@gmail.com"
