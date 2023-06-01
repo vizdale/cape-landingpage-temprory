@@ -13,6 +13,7 @@ const Input = (props) => {
         id={props.label}
         className="px-3 py-2 rounded-md w-full text-black outline-none"
         required
+        autoFocus
         placeholder={props.placeholder}
         value={props.value}
         onChange={(e) => props.setFormData(prev => ({...prev, [props.inputName] : e.target.value}))}

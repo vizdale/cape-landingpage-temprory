@@ -40,7 +40,7 @@ const Forms = () => {
       <P3 classes="mb-5">
         Start your branding journey today, with CAPE in your corner!
       </P3>
-      <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
+      <form className="flex flex-col gap-5" onSubmit={handleSubmit} id= "form">
         <Input
           type="email"
           placeholder="example@gmail.com"

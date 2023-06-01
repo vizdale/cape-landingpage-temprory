@@ -21,7 +21,7 @@ const Footer = () => {
           <LinkedinLogo size={28} />
         </a>
       </div>
-      <P3 classes="mx-auto text-center mt-5">2021 Datastorm Pvt Ltd</P3>
+      <P3 classes="mx-auto text-center mt-5">{new Date().getFullYear() } Datastorm Pvt Ltd</P3>
     </footer>
   );
 };

@@ -10,9 +10,9 @@ const CtaSection = () => {
         Go on, test our CAPE-abilities! 
         </H1>
         <P2 classes='text-center'>Branding is our superpower, brands are our fuel.</P2>
-        <a href = "form" className='bg-black rounded-lg px-16 py-2 w-fit block mx-auto'>
+        <a href = "#form" className='bg-black rounded-lg px-16 py-2 w-fit block mx-auto'>
         <H1 classes='text-[24px] leading-[24px]  text-center uppercase py-2'>
-        Go on, fill it!
+        fill it!
         </H1>
         </a>
         </div>

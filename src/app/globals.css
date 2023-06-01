@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
 
 .center-section{
   @apply w-11/12 md:max-w-[1150px] mx-auto 
