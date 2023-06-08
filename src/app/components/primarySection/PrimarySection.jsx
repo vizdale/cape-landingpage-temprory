@@ -6,7 +6,7 @@ import Content from './Content'
 
 const PrimarySection = () => {
   return (
-    <section className='bg-red py-32'>
+    <section className='bg-red pb-32'>
         <div className='center-section flex lg:flex-row flex-col gap-5'>
             <div className='w-full md:w-8/12 mx-auto lg:m-0'>
               <Testimonials/>

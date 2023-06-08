@@ -4,7 +4,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="bg-red border-none pt-16 pb-12">
+    <section className="bg-red border-none py-24">
       <div className="flex flex-col items-center justify-center  gap-5">
         <H1 classes="text-[24px] leading-[24px] md:text-[40px] md:leading-[40px] text-center uppercase max-w-[536px]">
           CAPE: The Superheroes Your Brand Needs.
